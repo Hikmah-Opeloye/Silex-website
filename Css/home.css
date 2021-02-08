@@ -1,0 +1,73 @@
+/* stylig for slider */
+#slider {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* stylig for grid */
+article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 2em;
+
+}
+
+/* stylig for grid item */
+.tier {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: silver;
+    border: 4px double #2e2f30;
+    background-color: #181819;
+}
+
+/* stylig for grid item heading */
+.tier h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: lato, Arial, Helvetica, serif;
+    line-height: 1.6em;
+    color: #fff;
+    padding: 5px;
+}
+
+.icons {
+    border: 2px solid #fff;
+    border-radius: 45px;
+    padding: 20px;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    transition: width 2s, height 4s;
+    transition-timing-function: ease-in;
+    display: block;
+}
+
+.icons:hover {
+    background-color: #2e2f30;
+    border: 2px solid #000;
+}
+
+.tier a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* media query for large mobile and ipad and small laptops */
+@media only screen and (min-width: 480px) {
+    article {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    article {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+

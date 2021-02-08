@@ -1,0 +1,123 @@
+/* stylig for grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: auto;
+}
+
+/* stylig for grid container heading */
+.grid-container h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: Arial, Helevtica, serif;
+    color: #fff;
+    padding: 10px;
+
+}
+
+/* stylig for grid item*/
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+    background-color: transparent;
+    border: 4px double #181819;
+    width: 80%;
+    margin: auto;
+}
+
+/* stylig for grid item heading */
+.grid-item h6 {
+    text-align: center;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helevtica, serif;
+    color: #fff;
+    display: block;
+}
+
+.grid-item aside {
+    margin: auto;
+    padding: 10px;
+
+}
+
+/* stylig for team heading */
+#no-decor {
+    border: none;
+
+}
+
+.group img {
+
+    padding: 5px;
+    max-width: 50px;
+    max-height: 50px;
+    display: inline-block;
+}
+
+.grid-item span {
+    display: block;
+    text-align: center;
+}
+
+.group {
+    display: inline-block;
+    margin: auto;
+}
+
+/* stylig for team picure */
+.zoom {
+    display: block;
+    margin: auto;
+    padding: 5px;
+    transition: all 0.5s ease-out 0s;
+}
+
+.zoom:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* media query for different devices */
+@media only screen and (min-width: 480px) {
+    .grid-item {
+        flex-direction: row;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-item h6, .grid-item span {
+        text-align: left;
+    }
+
+}
+
+@media only screen and (min-width: 760px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #no-decor {
+        grid-column: 1/4;
+    }
+
+    .grid-item {
+        flex-direction: column;
+    }
+
+    .grid-item h6, .grid-item span {
+        text-align: center;
+    }
+}
+
+
+
+
+

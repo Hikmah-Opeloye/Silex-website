@@ -1,0 +1,57 @@
+/* styling for grid container*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+/* styling for grid item */
+.grid-item {
+    background-color: #181819;
+    border: 4px double #2e2f30;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+/* stylig for portfolio images */
+.portfolioimages {
+    width: 100%;
+}
+
+.portfolioimages:hover {
+    opacity: 0.5;
+
+}
+
+/* styling for portfolio text */
+.Description {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
+.Description h6 {
+    font-weight: lighter;
+    text-align: center;
+}
+
+.Description p {
+    padding-top: 10px;
+    font-size: 15px;
+    font-family: verdana, serif;
+    color: silver;
+}
+
+/* media query for different devices */
+@media only screen and (min-width: 550px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

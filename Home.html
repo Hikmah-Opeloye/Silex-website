@@ -1,0 +1,239 @@
+<!Doctype html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+    <title> Home page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Css/home.css">
+    <link rel="stylesheet" type="text/css" href="Css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="javascript/slippry.min.js"></script>
+    <link rel="stylesheet" href="Css/slippry.css"/>
+</head>
+
+<!--body -->
+<body>
+
+<!--header end -->
+<header>
+    <a href="#" id="logo"></a>
+
+    <!-- navigation start -->
+    <nav>
+        <a href="#" id="dropbtn"></a>
+        <ul>
+            <li><a href="Home.html"> Home </a></li>
+            <li><a href="About.html"> About </a></li>
+            <li><a href="Portfolio.html"> Portfolio </a></li>
+            <li><a href="Packages.html"> Packages </a></li>
+            <li><a href="Contact.html"> Contact </a></li>
+        </ul>
+    </nav>
+    <!-- navigation end -->
+
+</header>
+<!--header end -->
+
+<!-- content wrapper -->
+<section class="All_sections">
+
+    <!--section (Slider) -->
+    <section id="slider">
+
+        <!-- Full-width images with number and caption text -->
+        <ul id="slippry-demo">
+            <li>
+                <a href="#slide1"><img src="sliderimages/slide1.png" alt="Responsive Website!"></a>
+            </li>
+            <li>
+                <a href="#slide2"><img src="sliderimages/slide2.png" alt="Have any questions?"></a>
+            </li>
+            <li>
+                <a href="#slide3"><img src="sliderimages/slide3.png" alt="Amazing Team"></a>
+            </li>
+            <li>
+                <a href="#slide4"><img src="sliderimages/slide4.png" alt="Contact us at any time"></a>
+            </li>
+        </ul>
+
+        <!-- slider end-->
+    </section>
+
+    <!--main content -->
+    <section id="welcome">
+
+        <h2> Welcome</h2> <br>
+
+        <p> Since 2018 different clients have turned to us for top notch industry standard websites that can help
+            promote their business.
+            We have built websites for big and small successful companies.
+        </p> <br>
+
+        <p> We are proud to be an instrument in their success. Do you need a website for your business, but you are
+            completely lost? Then you are at the right place. Check out our portfolio and packages, and if you are still
+            in doubt, just give us a call. We are happy to help.
+        </p>
+
+    </section>
+    <br>
+    <!--main content -->
+
+
+    <article>
+        <section class="tier">
+					
+					<span class="icons">
+						<img src="images/navigation.png" alt="navigation icon">
+					</span>
+            <h2> Easy to navigate </h2>
+            <p> We build websites that are very easy to navigate and improved UX .</p>
+
+        </section>
+
+        <section class="tier">
+
+					<span class="icons">
+						<img src="images/responsive.png" alt="resonsive icon">
+					</span>
+            <h2>Responsive Website</h2>
+            <p>Wide range accessibility with our responsive websites.</p>
+
+        </section>
+
+        <section class="tier">
+					<span class="icons">
+						<img src="images/support.png" alt="support">
+					</span>
+            <h2>24/7 Support</h2>
+            <p> We are proud to say that we provide 24/7 support to our clients. </p>
+
+        </section>
+
+
+        <section class="tier">
+            <h2> About Us </h2>
+
+            <p> A web design company looking to help people make their business thrive. <a href="About.html"><i> Click
+                here </i> </a> to read more
+            </p>
+
+        </section>
+
+        <section class="tier">
+            <h2> Why Us </h2>
+
+            <p>
+                Home Page variations, <br>
+                Modern Designs, <br>
+                Bootstrap 3.30 <br>
+                W3C Validator <br>
+            </p>
+        </section>
+
+        <section class="tier">
+            <h2> Projects </h2>
+            <p>Sonya Alvino Real Estate <br>
+                Keystone Industries <br>
+                Niclin Group<br>
+                Notify
+            </p>
+        </section>
+
+    </article>
+</section>
+<!-- main content end -->
+
+<!-- additional footer -->
+<footer id="second_footer">
+
+    <section class="end">
+        <h4> SERVICES </h4>
+        <p> Web design and development </p>
+        <p> Search engine optimization </p>
+        <p> Domain registration </p>
+        <p> Web hosting </p>
+    </section>
+
+    <section class="end" id="hide">
+        <h4>GET IN TOUCH </h4>
+        <p>
+            <a id="pict" href="Contact.html"></a>
+        </p>
+    </section>
+
+    <section class="end">
+        <h4>ADDRESS </h4>
+        <p> Silex web studio, 7 Kindersley street,</p>
+        <p> North Ormesby, Middlesbrough,</p>
+        <p> Cleveland, England.</p>
+        <p> 07404762970 </p>
+    </section>
+</footer>
+<!-- additional footer -->
+
+<!-- main footer -->
+<footer id="main_footer">
+    <aside class="footergrid">
+        <p> Copyright &copy; 2018 @ Silex webstudio.com </p>
+    </aside>
+    <aside class="footergrid">
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/fb.png" alt="facebook icon"> </a>
+        <a href="https://uk.linkedin.com/" target="_blank">
+            <img src="images/in.png" alt="linked in icon"> </a>
+        <a href="https://twitter.com/" target="_blank">
+            <img src="images/twitt.png" alt="twitter icon"> </a>
+    </aside>
+</footer>
+<!-- main footer end -->
+
+<!-- jquery for slider -->
+<script>
+    $(function () {
+        var demo1 = $("#slippry-demo").slippry({
+            // transition: 'fade',
+            // useCSS: true,
+            // speed: 1000,
+            // pause: 3000,
+            // auto: true,
+            // preload: 'visible',
+            // autoHover: false
+        });
+
+        $('.stop').click(function () {
+            demo1.stopAuto();
+        });
+
+        $('.start').click(function () {
+            demo1.startAuto();
+        });
+
+        $('.prev').click(function () {
+            demo1.goToPrevSlide();
+            return false;
+        });
+        $('.next').click(function () {
+            demo1.goToNextSlide();
+            return false;
+        });
+        $('.reset').click(function () {
+            demo1.destroySlider();
+            return false;
+        });
+        $('.reload').click(function () {
+            demo1.reloadSlider();
+            return false;
+        });
+        $('.init').click(function () {
+            demo1 = $("#slippry-demo").slippry();
+            return false;
+        });
+    });
+</script>
+<!-- jquery end-->
+
+</body>
+<!-- body end -->
+</html>

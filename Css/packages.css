@@ -1,0 +1,76 @@
+/* styling for grid container*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+/* styling for grid item */
+.grid-item {
+    padding: 20px;
+    color: white;
+    margin: auto;
+    width: 70%;
+
+}
+
+/* styling for table */
+table {
+    border-collapse: collapse;
+    color: #fff;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5);
+    border: 4px double #181819;
+}
+
+th {
+    padding: 15px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tablehead {
+    color: #fff;
+    /*background-color:#181819;*/
+    font-size: 20px;
+    font-weight: lighter;
+    border-radius: 5px 5px 0 0;
+}
+
+.tablehead2 {
+    background: #2e2f30;
+    color: #fff;
+    font-size: 35px;
+}
+
+td {
+    padding: 15px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    border-collapse: collapse;
+    /*background-color:  #181819;*/
+}
+
+/* styling for purchase button */
+input {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    background: darkgrey;
+    text-align: center;
+    color: #000;
+    font-size: 15px;
+}
+
+/* media query for different devices */
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+}
